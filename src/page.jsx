@@ -5,7 +5,7 @@ const ResearchPage = () => {
     <div style={styles.page}>
       <header style={styles.header}>
         <h1 style={styles.title}>The Future of Pneumatic Conveying Systems</h1>
-        <p style={styles.subtitle}>An In-depth Research Report | 2025</p>
+        <p style={styles.subtitle}>An In-depth Research Report | 2021</p>
       </header>
 
       <main style={styles.main}>
