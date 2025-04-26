@@ -40,20 +40,12 @@ const PneumaticConveyingDetailsEnhanced = () => {
   // Governing equations for Pneumatic Conveying
   const governingEquations = [
     {
-      title: "Pressure Drop in Pipeline",
-      equation: "ΔP = f * (L/D) * (ρ * v²) / 2",
-      description: "This equation calculates the pressure drop (ΔP) in the pipeline, which is influenced by friction (f), pipe length (L), diameter (D), and airflow velocity (v). The density (ρ) of the air also plays a critical role in determining how pressure changes as the air moves through the pipe."
+      title: "Navier Stokes Equation",
+      equation: "∂v/∂t + (v · ∇)v = - (1/ρ) ∇p + ν ∇²v + f"
+,
+      description: "We measure the pressure at the inlet and outlet using pressure gauges, and then, by applying the Navier-Stokes equation, we calculate the velocity profile."
     },
-    {
-      title: "Conveying Capacity (Mass Flow Rate)",
-      equation: "M = ρ * A * v",
-      description: "The mass flow rate (M) represents the amount of material conveyed through the pipeline per unit of time. This equation takes into account the density (ρ) of the material, the cross-sectional area (A) of the pipeline, and the velocity (v) of the air flow."
-    },
-    {
-      title: "Conveying Velocity for Minimum Pressure Drop",
-      equation: "v = √(2 * ΔP / (ρ * f * L / D))",
-      description: "This equation helps determine the optimal velocity of air flow for minimizing pressure drop in the conveying pipeline. It factors in the pressure drop (ΔP), air density (ρ), friction factor (f), pipe length (L), and diameter (D)."
-    }
+    
   ];
 
   // Advantages of Pneumatic Conveying
